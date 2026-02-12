@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Valentine's Day</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="book-container">
+  <div class="flipbook">
+    <div class="hard"> <div class="headline">Sam Lymeng 💖 👩🏻‍❤️‍👨🏻Phorn Sotheany </div> <small><div class="subhead">Love Forever</div></small></div>
+    <div class="hard"></div>
+    <div>
+      <small>Happy Valentine's Day, My Only one love for this life! 💖</small>
+      <small>There is nothing can describe how much i love you ❤️</small>
+       <p>I don't care who disagree with us, I just know that nothing can stop my love for you. I love you from the bottom oy my life. I hope we can end this relationship with married status and 
+      have a small family in the future. I always dream to have 3 kids with you haha, a small busines, a house, and a car. </p> 
+
+      
+      <big>Oun slanh Hea Meng Klang Nas Bong Somlanh 👩🏻‍❤️‍👨🏻♥️</big>
+    </div>
+    
+    <div>
+      
+      <img src="img/IMG_0182.JPG" alt="" />
+      <small> Magic </small>
+    </div>
+    <div>
+      <img src="img/IMG_0358.JPEG" alt="" />
+      <small> Heart beats  </small>
+    </div>
+    <div>
+      <img src="img/IMG_0359.JPG" alt="" />
+      <small> Special </small>
+    </div>
+    <div>
+      <img src="img/IMG_9369.PNG" alt="" />
+      <small> Happiness </small>
+    </div>
+    <div>
+      <img src="img/IMG_9452.JPG" alt="" />
+      <small> Love  </small>
+    </div>
+    
+    <div class="hard"></div>
+    <div class="hard">Thank You <small>~ Ayushman</small></div>
+  </div>
+  </div>
+
+  <script src="jquery.js"></script>
+  <script src="turn.js"></script>
+  <script>
+  function resizeFlipbook() {
+    var width = Math.min(window.innerWidth, 1000);
+    var height = (width * 600) / 1000;
+
+    if (window.innerWidth < 768) {
+      $(".flipbook").turn("display", "single");
+    } else {
+      $(".flipbook").turn("display", "double");
+    }
+
+    $(".flipbook").turn("size", width, height);
+  }
+
+  $(".flipbook").turn({
+    width: 1000,
+    height: 600,
+    autoCenter: true
+  });
+
+  $(window).resize(function () {
+    resizeFlipbook();
+  });
+
+  resizeFlipbook();
+</script>
+
+</body>
+
+</html>
